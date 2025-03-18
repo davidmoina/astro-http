@@ -12,9 +12,17 @@
   "dependencies": {
     "@astrojs/cloudflare": "^12.2.4",
     "@astrojs/db": "^0.14.8",
-    "@astrojs/mdx": "^4.1.1",
+    "@astrojs/mdx": "^4.2.1",
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.4.3"
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/vue": "^5.0.7",
+    "@types/lodash.debounce": "^4.0.9",
+    "astro": "^5.5.3",
+    "canvas-confetti": "^1.9.3",
+    "lodash.debounce": "^4.0.8",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0"
   }
 }
