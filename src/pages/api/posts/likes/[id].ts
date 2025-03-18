@@ -9,11 +9,17 @@ export const GET: APIRoute = async ({ params }) => {
   const posts = await db.select().from(Posts).where(eq(Posts.id, id!));
 
   if (posts.length === 0) {
-    return new Response(JSON.stringify({ error: "Post not found" }), {
+    const post = {
+      id: id!,
+      title: "Post not found",
+      likes: 0,
+    };
+
+    return new Response(JSON.stringify(post), {
       headers: {
         "Content-Type": "application/json",
       },
-      status: 404,
+      status: 200,
     });
   }
 
